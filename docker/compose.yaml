@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  apache:
+    image: httpd:2-alpine
+    container_name: httph
+    ports:
+      - "8880:80"
+    volumes:
+      - ../html:/usr/local/apache2/htdocs
+      - ../apache/httpd.conf:/usr/local/apache2/conf/httpd.conf
+    restart: unless-stopped
