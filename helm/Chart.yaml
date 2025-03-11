@@ -1,0 +1,5 @@
+apiVersion: v2
+name: httph
+description: A Helm chart for deploying domicvi/httph
+version: 0.1.0
+appVersion: "latest"
